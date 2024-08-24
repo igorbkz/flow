@@ -11,58 +11,63 @@
             color: #fff;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            margin: auto;
+            padding: 20px;
+            flex: 1;
         }
         header {
-            text-align: center;
-            padding-bottom: 40px;
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 20px;
         }
         header h1 {
-            font-size: 3em;
+            font-size: 1.5em;
             margin: 0;
+            letter-spacing: 2px;
         }
         .intro {
-            text-align: center;
             margin-bottom: 40px;
+            text-align: left;
         }
         .intro p {
-            font-size: 1.2em;
-            line-height: 1.5;
+            font-size: 1.1em;
+            line-height: 1.6;
         }
         .product {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            transition: background 0.3s;
-        }
-        .product:hover {
-            background: rgba(255, 255, 255, 0.2);
+            margin: 40px 0;
         }
         .product h2 {
+            font-size: 1.5em;
             margin: 0 0 10px;
-            font-size: 2em;
         }
         .product p {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            line-height: 1.6;
         }
         .product a {
-            color: #ffd700;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 2px;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .product a:hover {
+            color: #000;
+            border-color: #000;
+            background-color: #fff;
         }
         footer {
             text-align: center;
             padding: 20px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            margin-top: 40px;
-        }
-        footer p {
-            margin: 5px 0;
+            border-top: 1px solid #fff;
+            font-size: 0.9em;
+            margin-top: auto;
         }
     </style>
 </head>
@@ -72,22 +77,21 @@
             <h1>FlowAI</h1>
         </header>
         <div class="intro">
-            <p>Bem-vindo à FlowAI, onde a inovação encontra a inteligência artificial. Somos uma startup dedicada a criar soluções avançadas que transformam a interação digital e enriquecem suas experiências online. Nosso compromisso é desenvolver tecnologias de ponta que empoderam nossos usuários e impulsionam a eficiência em diversas áreas.</p>
+            <p>Na FlowAI, acreditamos no potencial da inteligência artificial para transformar a forma como interagimos com o mundo digital. Como uma empresa de IA com raízes no Brasil, estamos comprometidos em desenvolver tecnologias acessíveis e inovadoras, que façam a diferença para nossos usuários e inspirem a próxima geração de criadores.</p>
         </div>
         <div class="product">
             <h2>Chatbot Flow</h2>
-            <p>Experimente a próxima geração de interação com IA. Nosso Chatbot Flow oferece respostas instantâneas e precisas, mantendo um histórico contínuo das suas conversas. Ideal para empresas que buscam otimizar o atendimento ao cliente com inteligência artificial.</p>
+            <p>Uma implementação própria usando o modelo de linguagem de código aberto Mixtral 8x7B, proporcionando uma interação fluida e eficiente com IA. Nosso Chatbot está em constante evolução, buscando melhorar a comunicação entre empresas e seus clientes.</p>
             <a href="https://mixtral-chatbot.vercel.app/">Saiba mais</a>
         </div>
         <div class="product">
             <h2>GenarTV</h2>
-            <p>Descubra o poder da criatividade algorítmica com o GenarTV. Nossa plataforma gera arte visual impressionante baseada em suas preferências, oferecendo uma nova perspectiva sobre a arte digital e a capacidade infinita da IA em criar beleza.</p>
+            <p>Uma ferramenta interativa que gera imagens variadas automaticamente, combinando as entradas dos usuários para criar uma experiência artística única com IA. Utilizando o modelo Stable Diffusion da Stability AI, o GenarTV explora novas fronteiras da arte digital.</p>
             <a href="https://genartv.vercel.app/">Saiba mais</a>
         </div>
-        <footer>
-            <p>&copy; 2024 FlowAI. Todos os direitos reservados.</p>
-            <p>Desenvolvido por FlowAI</p>
-        </footer>
     </div>
+    <footer>
+        <p>&copy; 2024 FlowAI. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
