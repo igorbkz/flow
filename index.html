@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlowCorp - Inteligência Artificial</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">FlowCorp</div>
-            <ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -28,50 +31,56 @@
             <a href="#sobre" class="cta-button">Saiba Mais</a>
         </section>
 
-        <section id="sobre" class="about">
+        <section id="sobre">
             <h2>Sobre Nós</h2>
-            <p>Somos líderes em serviços de tecnologia e consultoria, oferecendo soluções digitais personalizadas que impulsionam o crescimento e a inovação.</p>
+            <p>Líderes em tecnologia e consultoria, oferecendo soluções digitais personalizadas para crescimento e inovação.</p>
         </section>
 
-        <section id="servicos" class="services">
+        <section id="servicos">
             <h2>Nossos Serviços</h2>
             <div class="service-grid">
                 <div class="service-card">
                     <i class="fas fa-code"></i>
                     <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites modernos e responsivos.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-laptop-code"></i>
+                    <i class="fas fa-robot"></i>
                     <h3>Consultoria em IA</h3>
+                    <p>Implementação de soluções de inteligência artificial.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-chart-line"></i>
                     <h3>Marketing Digital</h3>
+                    <p>Estratégias de marketing para aumentar sua presença online.</p>
                 </div>
             </div>
         </section>
 
-        <section id="produtos" class="produtos">
+        <section id="produtos">
             <h2>Produtos em Destaque</h2>
             <div class="produto-grid">
                 <a href="https://fluxlm.vercel.app/" class="produto-card">
                     <i class="fas fa-mobile-alt"></i>
                     <h3>FluxLM</h3>
+                    <p>Gerador de imagens.</p>
                 </a>
                 <a href="https://mixtral-chatbot.vercel.app/" class="produto-card">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-comments"></i>
                     <h3>Chatbot</h3>
+                    <p>IA para atendimento ao cliente.</p>
                 </a>
                 <a href="https://flowcorp.lojavirtualnuvem.com.br/" class="produto-card">
-                    <i class="fas fa-analytics"></i>
+                    <i class="fas fa-store"></i>
                     <h3>Loja</h3>
+                    <p>Plataforma de e-commerce</p>
                 </a>
             </div>
         </section>
 
         <section id="social-media">
             <h2>Fale Conosco</h2>
-            <p>Siga-nos no Instagram para entrar em contato e ficar por dentro das novidades.</p>
+            <p>Siga-nos no Instagram para novidades e contato.</p>
             <a href="https://www.instagram.com/flowcorp.br" target="_blank" rel="noopener noreferrer" class="instagram-link">
                 <i class="fab fa-instagram"></i> @flowcorp.br
             </a>
@@ -79,7 +88,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 FlowCorp. Todos os direitos reservados.</p>
+        <p>&copy; 2024 FlowCorp. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+    </script>
 </body>
 </html>
