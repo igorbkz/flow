@@ -3,96 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowAI</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #0d0d0d;
-            color: #e6e6e6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            letter-spacing: 0.05em;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 40px;
-            flex: 1;
-            background: rgba(20, 20, 20, 0.95);
-            box-shadow: 0 0 20px #333;
-        }
-        header {
-            display: flex;
-            justify-content: flex-start;
-            padding-bottom: 20px;
-        }
-        header h1 {
-            font-size: 2em;
-            margin: 0;
-            letter-spacing: 3px;
-            color: #ffffff;
-        }
-        .intro {
-            margin-bottom: 50px;
-            text-align: left;
-        }
-        .intro p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #c0c0c0;
-        }
-        .product {
-            margin: 60px 0;
-        }
-        .product h2 {
-            font-size: 1.7em;
-            margin: 0 0 15px;
-            color: #ffffff;
-        }
-        .product p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #d9d9d9;
-        }
-        .product a {
-            color: #ffffff;
-            text-decoration: none;
-            border-bottom: 1px solid #ffffff;
-            transition: color 0.3s, border-color 0.3s;
-        }
-        .product a:hover {
-            color: #000000;
-            border-color: #000000;
-            background-color: #ffffff;
-        }
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            border-top: 1px solid #333;
-            font-size: 1em;
-            color: #888;
-            margin-top: auto;
-        }
-    </style>
+    <title>FlowCorp - Inteligência Artificial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>FlowAI</h1>
-        </header>
-        <div class="intro">
-            <p>Na FlowAI, estamos dedicados a construir soluções que vão além do comum. Estamos desenvolvendo ferramentas e plataformas que irão redefinir a interação digital, com um foco especial no impacto positivo e na inovação acessível. O que você vê aqui é apenas uma pequena amostra do que somos capazes de fazer. Nossa jornada está apenas começando, e estamos prontos para causar uma verdadeira revolução no mercado de inteligência artificial.</p>
-        </div>
-        <div class="product">
-            <h2>Explorando Possibilidades</h2>
-            <p>Nossa <a href="https://mixtral-chatbot.vercel.app/">implementação própria de um modelo de linguagem</a> oferece uma interação fluida e eficiente, enquanto a <a href="https://genartv.vercel.app/">ferramenta de geração de imagens</a> explora novas fronteiras da arte digital. Esses projetos são apenas o início; estamos desenvolvendo tecnologias que irão transformar a forma como empresas e indivíduos interagem com a IA.</p>
-        </div>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">FlowCorp</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Transforme seu negócio</h1>
+            <p>Soluções digitais inovadoras para impulsionar seu sucesso</p>
+            <a href="#sobre" class="cta-button">Saiba Mais</a>
+        </section>
+
+        <section id="sobre" class="about">
+            <h2>Sobre Nós</h2>
+            <p>Somos líderes em serviços de tecnologia e consultoria, oferecendo soluções digitais personalizadas que impulsionam o crescimento e a inovação.</p>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Desenvolvimento Web</h3>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Consultoria em IA</h3>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Marketing Digital</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="produto-grid">
+                <a href="https://fluxlm.vercel.app/" class="produto-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>FluxLM</h3>
+                </a>
+                <a href="https://mixtral-chatbot.vercel.app/" class="produto-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Chatbot</h3>
+                </a>
+                <a href="https://flowcorp.lojavirtualnuvem.com.br/" class="produto-card">
+                    <i class="fas fa-analytics"></i>
+                    <h3>Loja</h3>
+                </a>
+            </div>
+        </section>
+
+        <section id="social-media">
+            <h2>Fale Conosco</h2>
+            <p>Siga-nos no Instagram para entrar em contato e ficar por dentro das novidades.</p>
+            <a href="https://www.instagram.com/flowcorp.br" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                <i class="fab fa-instagram"></i> @flowcorp.br
+            </a>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 FlowAI. Todos os direitos reservados.</p>
+        <p>&copy; 2023 FlowCorp. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
