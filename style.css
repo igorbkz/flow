@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --color-black: #000;
     --color-white: #fff;
@@ -17,13 +18,16 @@
     --color-highlight: var(--color-medium-gray); /* Atualiza a cor de destaque para cinza médio */
 }
 
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--color-light-gray);
     background-color: var(--color-primary);
     line-height: 1.6;
     padding-top: 60px; /* Adiciona espaçamento para o header fixo */
+    transition: background-color 0.3s, color 0.3s; /* Adiciona transição para mudanças de cor */
 }
+
 
 header {
     background: var(--color-primary);
@@ -33,7 +37,9 @@ header {
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid var(--color-secondary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao header */
 }
+
 
 nav {
     display: flex;
@@ -44,39 +50,49 @@ nav {
     padding: 0 20px;
 }
 
+
 .menu-toggle {
     display: none; /* Esconde o botão de menu em telas grandes */
 }
 
+
 .logo {
-    font-size: 1.5em;
+    font-size: 1.8em; /* Aumenta o tamanho da fonte */
     font-weight: 700; /* Aumenta o peso da fonte */
     color: var(--color-white); /* Usa a cor branca */
+    transition: color 0.3s; /* Adiciona transição para mudanças de cor */
 }
+
 
 .nav-menu {
     display: flex;
     list-style: none;
 }
 
+
 .nav-menu li {
     margin-left: 20px;
 }
+
 
 .nav-menu li a {
     text-decoration: none;
     color: var(--color-light-gray);
     font-weight: 500; /* Aumenta o peso da fonte */
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s; /* Adiciona transição para mudanças de cor e transformação */
 }
+
 
 .nav-menu li a:hover {
     color: var(--color-highlight); /* Usa a nova cor de destaque */
+    transform: scale(1.1); /* Adiciona um efeito de zoom */
 }
+
 
 main {
     margin-top: 60px;
 }
+
 
 section {
     padding: 80px 20px; /* Aumenta o padding */
@@ -84,9 +100,11 @@ section {
     margin: 0 auto;
 }
 
+
 h1, h2, h3 {
     margin-bottom: 20px;
 }
+
 
 h1 {
     font-size: 3em; /* Ajusta o tamanho da fonte */
@@ -95,6 +113,7 @@ h1 {
     font-family: 'Poppins', sans-serif; /* Nova fonte */
 }
 
+
 h2 {
     font-size: 2.5em; /* Ajusta o tamanho da fonte */
     font-weight: 600; /* Aumenta o peso da fonte */
@@ -102,12 +121,15 @@ h2 {
     font-family: 'Poppins', sans-serif; /* Nova fonte */
 }
 
+
 .hero {
     background: var(--color-primary);
     text-align: center;
     padding: 120px 20px; /* Ajusta o padding */
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary)); /* Adiciona um gradiente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
+
 
 .hero p {
     font-size: 1.2em; /* Ajusta o tamanho da fonte */
@@ -116,6 +138,7 @@ h2 {
     color: var(--color-light-gray); /* Usa a cor cinza claro */
 }
 
+
 .cta-button {
     display: inline-block;
     padding: 15px 30px; /* Ajusta o padding */
@@ -123,15 +146,24 @@ h2 {
     color: var(--color-white);
     text-decoration: none;
     border-radius: 30px; /* Torna os cantos arredondados */
-    transition: background-color 0.3s, transform 0.3s; /* Adiciona transição de transformação */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Adiciona transição de transformação e sombra */
     font-weight: 600; /* Aumenta o peso da fonte */
     font-size: 1em; /* Ajusta o tamanho da fonte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
+
 
 .cta-button:hover {
     background-color: var(--color-dark-gray);
     transform: scale(1.05); /* Adiciona um efeito de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ajusta a sombra */
 }
+
+
+button, .cta-button, .instagram-link {
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
 
 .service-grid, .produto-grid {
     display: grid;
@@ -139,6 +171,7 @@ h2 {
     gap: 40px; /* Ajusta o espaçamento */
     margin-top: 40px; /* Ajusta o espaçamento superior */
 }
+
 
 .service-card, .produto-card {
     background: var(--color-primary);
@@ -150,10 +183,12 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
 
+
 .service-card:hover, .produto-card:hover {
     transform: translateY(-5px); /* Ajusta a translação */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ajusta a sombra */
 }
+
 
 .service-card i, .produto-card i {
     font-size: 3em; /* Ajusta o tamanho da fonte */
@@ -161,85 +196,108 @@ h2 {
     margin-bottom: 15px; /* Ajusta o espaçamento inferior */
 }
 
+
 .service-card h3, .produto-card h3 {
     color: var(--color-light-gray); /* Usa a cor cinza claro */
     font-size: 1.3em; /* Ajusta o tamanho da fonte */
     margin-bottom: 10px; /* Adiciona espaçamento inferior */
 }
 
+
 .service-card p, .produto-card p {
     color: var(--color-accent); /* Usa a cor de destaque */
     font-size: 1em; /* Ajusta o tamanho da fonte */
 }
 
-#contato { /* Nova seção de contato */
-    background: var(--color-secondary);
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 15px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1em;
-}
-
-.contact-form button {
-    background-color: var(--color-highlight);
-    color: var(--color-white);
-    border: none;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: var(--color-dark-gray);
-    transform: scale(1.05);
-}
 
 #social-media {
     background: linear-gradient(to right, var(--color-secondary), var(--color-dark-gray)); /* Adiciona um gradiente */
     text-align: center;
-    padding: 60px 20px; /* Ajusta o padding */
+    padding: 80px 20px; /* Ajusta o padding vertical */
     margin-bottom: 40px; /* Adiciona espaçamento inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
+
 
 .instagram-link {
     display: inline-block;
     color: var(--color-white);
     font-size: 1.3em; /* Ajusta o tamanho da fonte */
     text-decoration: none;
-    padding: 15px 30px; /* Ajusta o padding */
+    padding: 12px 24px; /* Ajusta o padding do botão */
+    margin-top: 10px; /* Adiciona um espaço acima do botão */
     background-color: var(--color-dark-gray); /* Usa a cor de destaque */
     border-radius: 30px; /* Torna os cantos arredondados */
-    transition: background-color 0.3s, transform 0.3s; /* Adiciona transição de transformação */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Adiciona transição de transformação e sombra */
     font-weight: 600; /* Aumenta o peso da fonte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
+
 
 .instagram-link:hover {
     background-color: var(--color-black);
     transform: scale(1.05); /* Adiciona um efeito de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ajusta a sombra */
 }
 
-footer {
-    text-align: center;
-    padding: 30px; /* Ajusta o padding */
-    background: var(--color-secondary);
-    color: var(--color-light-gray);
-    font-size: 1em; /* Ajusta o tamanho da fonte */
+
+.instagram-link i {
+    margin-right: 12px; /* Ajusta o espaço entre o ícone e o texto */
 }
+
+
+footer {
+    background: var(--color-primary);
+    color: var(--color-light-gray);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid var(--color-secondary);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao footer */
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.footer-logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+.footer-nav li a {
+    text-decoration: none;
+    color: var(--color-light-gray);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+
+.footer-nav li a:hover {
+    color: var(--color-highlight);
+}
+
+
+footer p {
+    font-size: 0.9em;
+    color: var(--color-accent);
+}
+
 
 @media (max-width: 768px) {
     .menu-toggle {
