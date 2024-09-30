@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <meta name="description" content="FlowCorp - Soluções digitais inovadoras para impulsionar seu sucesso.">
+    <meta name="keywords" content="FlowCorp, Inteligência Artificial, Consultoria, Desenvolvimento Web, Marketing Digital">
+    <style>
+        .instagram-link i {
+            margin-right: 8px; /* Adiciona espaço à direita do ícone */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -80,10 +87,12 @@
 
         <section id="social-media">
             <h2>Fale Conosco</h2>
-            <p>Siga-nos no Instagram para novidades e contato.</p>
-            <a href="https://www.instagram.com/flowcorp.br" target="_blank" rel="noopener noreferrer" class="instagram-link">
-                <i class="fab fa-instagram"></i> @flowcorp.br
-            </a>
+            <div class="mt-8 text-center">
+                <p class="mb-6">Siga-nos no Instagram para novidades e contato.</p>
+                <a href="https://www.instagram.com/flowcorp.br" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                    <i class="fab fa-instagram"></i>@flowcorp.br
+                </a>
+            </div>
         </section>
     </main>
 
@@ -93,7 +102,10 @@
 
     <script>
     document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('.nav-menu').classList.toggle('active');
+        const navMenu = document.querySelector('.nav-menu');
+        navMenu.classList.toggle('active');
+        const isExpanded = navMenu.classList.contains('active');
+        this.setAttribute('aria-expanded', isExpanded);
     });
     </script>
 </body>
